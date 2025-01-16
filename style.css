@@ -1,0 +1,85 @@
+/* ESTILO GERAL */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* utiliza 100% da altura da janela */
+    display: flex;
+    flex-direction: column;
+}
+
+/* CABEÇALHO */
+header{
+    background: black;
+    color: white;
+    padding: 1rem 0;
+    text-align: center; /* centraliza o título */
+}
+
+header h1{
+    margin: 0;
+    font-size: 2rem;
+}
+
+header nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main{
+    flex: 1; /* cresce para ocupar o espaço restante */
+    padding-left: 10%; /* define o espaçamento à esquerda como 10% da largura da página */
+    padding-right: 1rem;
+    box-sizing: border-box; /* garante que o padding não afete a largura total */
+}
+
+/* RODAPÉ */
+footer{
+    background: black;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: auto; /* empurra o footer para o final da página */
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* CLASSES */
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; /* centraliza o conteúdo horizontalmente */
+    align-items: center; /* centraliza o conteúdo verticalmente */
+}
