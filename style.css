@@ -121,6 +121,21 @@ a:hover { /* links no corpo da página */
     align-items: center; /* centraliza o conteúdo verticalmente */
 }
 
-.logo{
+p #signature {
+    transition: all 250ms ease;
+}
+
+p #signature:hover {
+    font-weight: bold;
+    cursor: url("assets/heart.png"), pointer;
+}
+
+.logo {
     padding: 1rem;
+
+    transition: all 250ms ease;
+}
+
+.logo:hover {
+    scale: 1.25;
 }
