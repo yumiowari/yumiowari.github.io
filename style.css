@@ -1,7 +1,10 @@
-/* ESTILO GERAL */
-body{
+/* https://paletadecores.com/paleta/d4cdc5/5b88a5/f4f4f2/191013/243a69/ */
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
+    background: #f4f4f2;
+    color: #191013;
 
     margin: 0;
     padding: 0;
@@ -10,20 +13,19 @@ body{
     flex-direction: column;
 }
 
-/* CABEÇALHO */
-header{
-    background: black;
-    color: white;
+header {
+    background: #191013;
+    color: #f4f4f2;
     padding: 1rem 0;
     text-align: center; /* centraliza o título */
 }
 
-header h1{
+header h1 {
     margin: 0;
     font-size: 2rem;
 }
 
-header nav ul{
+header nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -33,35 +35,38 @@ header nav ul{
     overflow: visible; /* garante que o conteúdo possa transladar */
 }
 
-header nav ul li{
+header nav ul li {
     position: relative;
 }
 
-header nav ul li a{
-    color: blue;
+header nav ul li a {
+    font-size: 1.25rem; /* 125% (para compensar a fonte) */
+
+    color: #5b88a5;
     text-decoration: none;
     display: inline-block;
-    transition: all 250ms ease; /* para uma transição suave */
+    transition: all 250ms ease;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
+    color: #243a69;
     text-decoration: underline;
     font-weight: bold;
     transform: translateY(3px) /* desloca o link 3px para baixo */
 }
 
-/* CONTEÚDO PRINCIPAL */
-main{
+main {
+    background: #f4f4f2;
+    color: #191013;
     flex: 1; /* cresce para ocupar o espaço restante */
     padding-left: 10%; /* define o espaçamento à esquerda como 10% da largura da página */
     padding-right: 1rem;
     box-sizing: border-box; /* garante que o padding não afete a largura total */
 }
 
-/* RODAPÉ */
-footer{
-    background: black;
-    color: white;
+footer {
+    background: #d4cdc5;
+    color: #191013;
     padding: 1rem 0;
     text-align: center;
     margin-top: auto; /* empurra o footer para o final da página */
@@ -77,27 +82,45 @@ footer ul {
     overflow: visible; /* garante que o conteúdo possa transladar */
 }
 
-footer ul li{
+footer ul li {
     position: relative;
 }
 
 footer ul li a {
-    color: blue;
+    font-size: 1.25rem;
+
+    color: #243a69;
     text-decoration: none;
     display: inline-block;
-    transition: all 250ms ease; /* para uma transição suave */
+    transition: all 250ms ease;
 }
 
 footer ul li a:hover {
+    color: #5b88a5;
     text-decoration: underline;
     font-weight: bold;
     transform: translateY(-3px) /* desloca o link 3px para cima */
 }
 
-/* CLASSES */
-.container{
+a {  /* links no corpo da página */
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 250ms ease;
+    color: #243a69;
+}
+
+a:hover { /* links no corpo da página */
+    text-decoration: underline;
+    font-weight: bold;
+    color: #5b88a5;
+}
+
+.container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto; /* centraliza o conteúdo horizontalmente */
     align-items: center; /* centraliza o conteúdo verticalmente */
+}
+
+.logo{
+    padding: 1rem;
 }
