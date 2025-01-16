@@ -30,15 +30,24 @@ header nav ul{
     display: flex;
     gap: 1rem;
     justify-content: center;
+    overflow: visible; /* garante que o conteúdo possa transladar */
+}
+
+header nav ul li{
+    position: relative;
 }
 
 header nav ul li a{
-    color: white;
+    color: blue;
     text-decoration: none;
+    display: inline-block;
+    transition: all 250ms ease; /* para uma transição suave */
 }
 
 header nav ul li a:hover{
     text-decoration: underline;
+    font-weight: bold;
+    transform: translateY(3px) /* desloca o link 3px para baixo */
 }
 
 /* CONTEÚDO PRINCIPAL */
@@ -65,15 +74,24 @@ footer ul {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    overflow: visible; /* garante que o conteúdo possa transladar */
+}
+
+footer ul li{
+    position: relative;
 }
 
 footer ul li a {
-    color: white;
+    color: blue;
     text-decoration: none;
+    display: inline-block;
+    transition: all 250ms ease; /* para uma transição suave */
 }
 
 footer ul li a:hover {
     text-decoration: underline;
+    font-weight: bold;
+    transform: translateY(-3px) /* desloca o link 3px para cima */
 }
 
 /* CLASSES */
