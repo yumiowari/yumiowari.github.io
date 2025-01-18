@@ -127,7 +127,7 @@ p #signature {
 
 p #signature:hover {
     font-weight: bold;
-    cursor: url("assets/heart.png"), pointer;
+    cursor: url("assets/heart cursor.png"), pointer;
 }
 
 .logo {
