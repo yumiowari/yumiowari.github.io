@@ -27,6 +27,12 @@ header nav ul {
     justify-content: center;
 }
 
+header nav ul li .current-page {
+    text-decoration: underline;
+    font-weight: bold;
+    transform: translateY(3px);
+}
+
 header nav ul li a {
     font-size: 1.25rem; /* 125% (para compensar a fonte) */
     color: #5b88a5;
@@ -82,7 +88,7 @@ a {  /* links no corpo da página */
 }
 
 a:hover { /* links no corpo da página */
-    text-decoration: underline;
+    text-decoration: underline dotted;
     font-weight: bold;
     color: #5b88a5;
 }
