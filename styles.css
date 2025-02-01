@@ -1,0 +1,106 @@
+/* https://paletadecores.com/paleta/d4cdc5/5b88a5/f4f4f2/191013/243a69/ */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background: #f4f4f2;
+    color: #191013;
+    margin: 0;
+    height: 100vh; /* utiliza 100% da altura da janela */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #191013;
+    color: #f4f4f2;
+    padding: 1rem 0;
+    text-align: center; /* centraliza o título */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+header nav ul li a {
+    font-size: 1.25rem; /* 125% (para compensar a fonte) */
+    color: #5b88a5;
+    display: inline-block;
+}
+
+header nav ul li a:hover {
+    color: #243a69;
+    transform: translateY(3px) /* desloca o link 3 pixels para baixo */
+}
+
+main {
+    padding-left: 10%; /* define o espaçamento à esquerda como 10% da largura da página */
+    padding-right: 1rem;
+}
+
+footer {
+    background: #d4cdc5;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: auto; /* empurra o footer para o final da página */
+    box-shadow: 0 -10px 10px #d4cdc5;  /* sombra do footer */
+}
+
+footer p {
+    margin: 0 0 1rem 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    overflow: visible; /* garante que o conteúdo possa transladar */
+}
+
+footer ul li a {
+    font-size: 1.25rem;
+    display: inline-block;
+}
+
+footer ul li a:hover {
+    transform: translateY(-3px) /* desloca o link 3 pixels para cima */
+}
+
+a {  /* links no corpo da página */
+    font-family: 'Times New Roman', Times, serif;
+    color: #243a69;
+    text-decoration: none;
+    transition: all 250ms ease;
+}
+
+a:hover { /* links no corpo da página */
+    text-decoration: underline;
+    font-weight: bold;
+    color: #5b88a5;
+}
+
+p #signature {
+    transition: all 250ms ease;
+}
+
+p #signature:hover {
+    font-weight: bold;
+}
+
+.logo {
+    padding: 1rem;
+
+    transition: all 250ms ease;
+}
+
+.logo:hover {
+    scale: 120%;
+}

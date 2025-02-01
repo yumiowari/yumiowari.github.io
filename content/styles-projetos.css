@@ -5,9 +5,7 @@ body {
     line-height: 1.5;
     background: #f4f4f2;
     color: #191013;
-
     margin: 0;
-    padding: 0;
     height: 100vh; /* utiliza 100% da altura da janela */
     display: flex;
     flex-direction: column;
@@ -20,11 +18,6 @@ header {
     text-align: center; /* centraliza o título */
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
 header nav ul {
     list-style: none;
     padding: 0;
@@ -32,93 +25,66 @@ header nav ul {
     display: flex;
     gap: 1rem;
     justify-content: center;
-    overflow: visible; /* garante que o conteúdo possa transladar */
-}
-
-header nav ul li {
-    position: relative;
 }
 
 header nav ul li a {
     font-size: 1.25rem; /* 125% (para compensar a fonte) */
-
     color: #5b88a5;
-    text-decoration: none;
     display: inline-block;
-    transition: all 250ms ease;
 }
 
 header nav ul li a:hover {
     color: #243a69;
-    text-decoration: underline;
-    font-weight: bold;
-    transform: translateY(3px) /* desloca o link 3px para baixo */
+    transform: translateY(3px) /* desloca o link 3 pixels para baixo */
 }
 
 main {
-    background: #f4f4f2;
-    color: #191013;
-    flex: 1; /* cresce para ocupar o espaço restante */
     padding-left: 10%; /* define o espaçamento à esquerda como 10% da largura da página */
     padding-right: 1rem;
-    box-sizing: border-box; /* garante que o padding não afete a largura total */
 }
 
 footer {
     background: #d4cdc5;
-    color: #191013;
     padding: 1rem 0;
     text-align: center;
     margin-top: auto; /* empurra o footer para o final da página */
+    box-shadow: 0 -10px 10px #d4cdc5;  /* sombra do footer */
+}
+
+footer p {
+    margin: 0 0 1rem 0;
 }
 
 footer ul {
     list-style: none;
     padding: 0;
-    margin: 1rem 0 0;
+    margin: 1rem 0 0 0;
     display: flex;
     justify-content: center;
     gap: 1rem;
     overflow: visible; /* garante que o conteúdo possa transladar */
 }
 
-footer ul li {
-    position: relative;
-}
-
 footer ul li a {
     font-size: 1.25rem;
-
-    color: #243a69;
-    text-decoration: none;
     display: inline-block;
-    transition: all 250ms ease;
 }
 
 footer ul li a:hover {
-    color: #5b88a5;
-    text-decoration: underline;
-    font-weight: bold;
-    transform: translateY(-3px) /* desloca o link 3px para cima */
+    transform: translateY(-3px) /* desloca o link 3 pixels para cima */
 }
 
 a {  /* links no corpo da página */
     font-family: 'Times New Roman', Times, serif;
-    transition: all 250ms ease;
     color: #243a69;
+    text-decoration: none;
+    transition: all 250ms ease;
 }
 
 a:hover { /* links no corpo da página */
     text-decoration: underline;
     font-weight: bold;
     color: #5b88a5;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto; /* centraliza o conteúdo horizontalmente */
-    align-items: center; /* centraliza o conteúdo verticalmente */
 }
 
 p #signature {
@@ -136,5 +102,17 @@ p #signature:hover {
 }
 
 .logo:hover {
-    scale: 1.25;
+    scale: 120%;
+}
+
+.book {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.book .page {
+    width: 48%;
+    padding: 10px;
+    box-sizing: border-box;
 }
