@@ -47,13 +47,13 @@ header nav ul li a:hover {
 main {
     padding-left: 10%; /* define o espaçamento à esquerda como 10% da largura da página */
     padding-right: 1rem;
+    flex: 100%; /* empurra o footer e o header para as extremidades */
 }
 
 footer {
     background: #d4cdc5;
     padding: 1rem 0;
     text-align: center;
-    margin-top: auto; /* empurra o footer para o final da página */
     box-shadow: 0 -10px 10px #d4cdc5;  /* sombra do footer */
 }
 
