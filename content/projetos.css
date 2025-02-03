@@ -101,6 +101,20 @@ p #signature:hover {
     font-weight: bold;
 }
 
+section {
+    border: 2px dashed #191013;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+section p {
+    margin-bottom: 0;
+}
+
 .logo {
     padding: 1rem;
 
