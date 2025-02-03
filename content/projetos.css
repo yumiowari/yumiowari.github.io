@@ -102,9 +102,24 @@ p #signature:hover {
 }
 
 section {
-    border: 2px dashed #191013;
     padding: 1rem;
     margin: 1rem;
+}
+
+section.released {
+    border: 2px solid green;
+}
+
+section.working-on {
+    border: 2px dashed orange;
+}
+
+section.to-do {
+    border: 2px dashed red;
+}
+
+section.archived {
+    border: 2px solid gray;
 }
 
 section h2 {
