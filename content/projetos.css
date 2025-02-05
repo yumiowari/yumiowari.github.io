@@ -106,19 +106,19 @@ section {
     margin: 1rem;
 }
 
-section.released {
+section#released {
     border: 2px solid green;
 }
 
-section.working-on {
+section#working-on {
     border: 2px dashed orange;
 }
 
-section.to-do {
+section#to-do {
     border: 2px dashed red;
 }
 
-section.archived {
+section#archived {
     border: 2px solid gray;
 }
 
@@ -156,6 +156,13 @@ section p {
         padding: 10px;
         box-sizing: border-box;
     }
+
+    ul#c-structures_progress {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        padding-left: 1rem;
+    }
 }
 
 /* Mobile */
@@ -183,5 +190,13 @@ section p {
     /* Página direita (inferior) */
     .book .page#right {
         padding-top: 0;
+    }
+
+    ul#c-structures_progress {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-left: 1rem;
     }
 }
