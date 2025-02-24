@@ -84,7 +84,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     left_page.appendChild(new_section);
                 }
 
-                loadProjects(i + 1); // carrega o próximo .JSON
+                setTimeout(() => {
+                    loadProjects(i + 1); // carrega o próximo projeto
+                }, 250); // aguarda 250 milissegundos
+                
             })
             .catch(() => console.log(`Fim da lista de projetos no ${i}º elemento.`));
     }
