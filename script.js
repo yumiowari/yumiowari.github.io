@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+/*
+    função para animar a assinatura "Yumiowari" no rodapé da página
+*/
     const signature = document.getElementById("signature");
     const original_text = signature.textContent;
     let interval;
@@ -20,4 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         clearInterval(interval); // interrompe a animação
         signature.textContent = original_text; // restaura o texto original
     });
+/*
+
+*/
 });

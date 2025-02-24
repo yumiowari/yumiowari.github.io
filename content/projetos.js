@@ -1,4 +1,37 @@
 document.addEventListener("DOMContentLoaded", () => {
+/*
+    função para animar a assinatura "Yumiowari" no rodapé da página
+*/
+    const signature = document.getElementById("signature");
+    const original_text = signature.textContent;
+    let interval;
+
+    signature.addEventListener("mouseover", () => {
+        let current_text = original_text;
+        let index = 0;
+
+        interval = setInterval(() => {
+            current_text = current_text.slice(-1) + current_text.slice(0, -1); // "rotaciona" o texto
+            signature.textContent = current_text;
+            index++;
+
+            if(index >= original_text.length)index = 0;
+        }, 200); // tempo entre os frames (em milissegundos)
+    });
+
+    signature.addEventListener("mouseout", () => {
+        clearInterval(interval); // interrompe a animação
+        signature.textContent = original_text; // restaura o texto original
+    });
+/*
+
+*/
+
+
+
+/*
+    função para carregar os projetos a partir dos arquivos .json
+*/
     const left_page = document.querySelector(".page#left");
     const right_page = document.querySelector(".page#right");
     let index = 1;
@@ -56,5 +89,8 @@ document.addEventListener("DOMContentLoaded", () => {
             .catch(() => console.log(`Fim da lista de projetos no ${i}º elemento.`));
     }
 
-    loadProjects(index);
-})
+    loadProjects(index); // inicia o carregamento dos projetos
+/*
+
+*/
+});
