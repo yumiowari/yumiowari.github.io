@@ -1,10 +1,8 @@
-/* https://paletadecores.com/paleta/d4cdc5/5b88a5/f4f4f2/191013/243a69/ */
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
-    background: #f4f4f2;
-    color: #191013;
+    background: #feffd9;
+    color: #241326;
     margin: 0;
     height: 100vh; /* utiliza 100% da altura da janela */
     display: flex;
@@ -12,8 +10,8 @@ body {
 }
 
 header {
-    background: #191013;
-    color: #f4f4f2;
+    background: #241326;
+    color: #feffd9;
     padding: 1rem 0;
     text-align: center; /* centraliza o título */
 }
@@ -35,12 +33,12 @@ header nav ul li .current-page {
 
 header nav ul li a {
     font-size: 1.25rem; /* 125% (para compensar a fonte) */
-    color: #5b88a5;
+    color: #2daab5;
     display: inline-block;
 }
 
 header nav ul li a:hover {
-    color: #243a69;
+    color: #1c4b8c;
     transform: translateY(3px) /* desloca o link 3 pixels para baixo */
 }
 
@@ -51,10 +49,10 @@ main {
 }
 
 footer {
-    background: #d4cdc5;
+    background: #feffd9;
     padding: 1rem 0;
     text-align: center;
-    box-shadow: 0 -10px 10px #d4cdc5;  /* sombra do footer */
+    box-shadow: 0 -10px 10px #feffd9;  /* sombra do footer */
 }
 
 footer p {
@@ -82,7 +80,7 @@ footer ul li a:hover {
 
 a {  /* links no corpo da página */
     font-family: 'Times New Roman', Times, serif;
-    color: #243a69;
+    color: #1c4b8c;
     text-decoration: none;
     transition: all 250ms ease;
 }
@@ -90,7 +88,7 @@ a {  /* links no corpo da página */
 a:hover { /* links no corpo da página */
     text-decoration: underline dotted;
     font-weight: bold;
-    color: #5b88a5;
+    color: #2daab5;
 }
 
 p #signature {
