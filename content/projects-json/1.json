@@ -2,7 +2,7 @@
     "title": "How To GitHub On Linux",
     "type": "released",
     "link": "https://github.com/yumiowari/how-to-github-on-linux",
-    "is-hot": false,
+    "is_hot": false,
     "description": "Tutorial para configurar uma chave GPG para autenticação do GitHub e assinatura de commits pelo terminal do Linux!",
     "preview": false,
     "preview-img": ""

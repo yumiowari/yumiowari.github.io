@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function loadProjects(i) {
         fetch(`projects-json/${i}.json`)
             .then(response => {
-                if(!response.ok) throw new Error(`O arquivo "content/projects/${i}.json" não foi encontrado.`);
+                if(!response.ok) throw new Error(`O arquivo "content/projects-json/${i}.json" não foi encontrado.`);
 
                 return response.json();
             })
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const title = document.createElement("h2");
                 title.textContent = data.title;
 
-                if(data.is-hot){
+                if(data.is_hot){
                     const img = document.createElement("img");
                     img.classList.add("HOT");
 
