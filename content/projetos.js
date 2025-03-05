@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const title = document.createElement("h2");
                 title.textContent = data.title;
 
-                if(data.hot){
+                if(data.is-hot){
                     const img = document.createElement("img");
                     img.classList.add("HOT");
 
