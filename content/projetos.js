@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 setTimeout(() => {
                     loadProjects(i + 1); // carrega o próximo projeto
-                }, 250); // aguarda 250 milissegundos
+                }, 100); // aguarda 1/10 de segundo
                 
             })
             .catch(() => console.log(`Fim da lista de projetos no ${i}º elemento.`));
