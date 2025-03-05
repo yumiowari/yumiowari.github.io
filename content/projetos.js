@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let index = 1;
 
     function loadProjects(i) {
-        fetch(`projects/${i}.json`)
+        fetch(`projects-json/${i}.json`)
             .then(response => {
                 if(!response.ok) throw new Error(`O arquivo "content/projects/${i}.json" não foi encontrado.`);
 
