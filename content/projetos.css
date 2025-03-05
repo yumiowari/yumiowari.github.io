@@ -49,10 +49,10 @@ main {
 }
 
 footer {
-    background: #feffd9;
+    background: #e6d0a1;
     padding: 1rem 0;
     text-align: center;
-    box-shadow: 0 -10px 10px #feffd9;  /* sombra do footer */
+    box-shadow: 0 -10px 10px #e6d0a1;  /* sombra do footer */
 }
 
 footer p {
