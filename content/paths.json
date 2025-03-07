@@ -1,0 +1,14 @@
+[
+    {
+        "text": "Home",
+        "path": "../index.html"
+    },
+    {
+        "text": "Projetos",
+        "path": "../content/projects.html"
+    },
+    {
+        "text": "Logo",
+        "path": "../assets/yumiowari.png"
+    }
+]
