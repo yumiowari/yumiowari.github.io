@@ -13,7 +13,7 @@ async function loadProjects(path){
         const response = await fetch(path);
         const projects = await response.json();
 
-        projects.forEach(project => {
+        for(const project of projects){
             const new_section = document.createElement("section");
             new_section.id = project.type;
             // released:   o projeto possui uma versão de lançamento e
@@ -55,7 +55,10 @@ async function loadProjects(path){
             }
 
             index++;
-        });
+
+            // aguarda 100ms antes de carregar o próximo projeto
+            await new Promise(resolve => setTimeout(resolve, 100));
+        }
     }catch(error){
         return console.error("Falha ao carregar os projetos:", error);
     }
@@ -68,9 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
         setHeaderPaths("./paths.json")
     ]).then(() => {
         animateSignature();
-
-        setTimeout(() => {
-            loadProjects("./projects.json"); // carrega o próximo projeto
-        }, 100); // aguarda 1/10 de segundo
+        loadProjects("./projects.json");
     })
 });
