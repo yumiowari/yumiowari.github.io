@@ -138,13 +138,13 @@ section p {
     scale: 120%;
 }
 
-.HOT {
+.hot {
     padding-left: 0.5rem;
 
     transition: all 250ms ease;
 }
 
-.HOT:hover {
+.hot:hover {
     scale: 120%;
 }
 
