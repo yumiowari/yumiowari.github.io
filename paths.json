@@ -1,14 +1,22 @@
 [
     {
-        "text": "Home",
+        "id": "home",
         "path": "./index.html"
     },
     {
-        "text": "Projetos",
+        "id": "projects",
         "path": "./content/projects.html"
     },
     {
-        "text": "Logo",
+        "id": "logo",
         "path": "./assets/yumiowari.png"
+    },
+    {
+        "id": "header_stylesheet",
+        "path": "./components/header.css"
+    },
+    {
+        "id": "footer_stylesheet",
+        "path": "./components/footer.css"
     }
 ]

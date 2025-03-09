@@ -1,0 +1,42 @@
+header {
+    background: #241326;
+    color: #feffd9;
+    padding: 1rem 0;
+    text-align: center; /* centraliza o título */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+header nav ul li#current-page {
+    text-decoration: underline;
+    font-weight: bold;
+    transform: translateY(3px);
+}
+
+header nav ul li a {
+    font-size: 1.25rem; /* 125% (para compensar a fonte) */
+    color: #2daab5;
+    display: inline-block;
+}
+
+header nav ul li a:hover {
+    color: #1c4b8c;
+    transform: translateY(3px) /* desloca o link 3 pixels para baixo */
+}
+
+header a img#signature {
+    padding: 1rem;
+
+    transition: all 250ms ease;
+}
+
+header a img#signature:hover {
+    scale: 120%;
+}

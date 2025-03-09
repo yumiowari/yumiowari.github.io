@@ -1,5 +1,6 @@
 # yumiowari.github.io
-Página estática hospedada no GitHub Pages, dedicada à organização dos meus projetos!
+
+Página estática hospedada no GitHub Pages, dedicada ao meu Portfólio!
 
 ---
 

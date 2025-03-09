@@ -1,5 +1,6 @@
-import { loadComponentByTag, setHeaderPaths } from '../components/header.js';
-import { animateSignature } from '../components/footer.js';
+import { loadComponentByTag } from '../components/core.js';
+import { setHeaderPaths } from '../components/header.js';
+import { animateSignature, setFooterPaths } from '../components/footer.js';
 
 async function loadProjects(path){
 // carrega os projetos a partir do arquivo .json
@@ -30,19 +31,19 @@ async function loadProjects(path){
 
             if(project.hot){
                 const img = document.createElement("img");
-                img.classList.add("hot");
+                img.id = "hot";
 
                 img.src = "../assets/hot.png";
                         
                 title.appendChild(img);
             }
 
-            const link = document.createElement("a");
-            link.href = project.link;
-            link.appendChild(title);
-            link.target = "_blank";
+            const anchor = document.createElement("a");
+            anchor.href = project.url;
+            anchor.appendChild(title);
+            anchor.target = "_blank";
 
-            new_section.appendChild(link);
+            new_section.appendChild(anchor);
 
             const description = document.createElement("p");
             description.textContent = project.description;
@@ -66,10 +67,11 @@ async function loadProjects(path){
 
 document.addEventListener("DOMContentLoaded", () => {
     Promise.all([
-        loadComponentByTag("header", "../components/header.html"),
+        loadComponentByTag("header", "../components/header.html")
+            .then(() => setHeaderPaths("./paths.json")),
         loadComponentByTag("footer", "../components/footer.html")
+            .then(() => setFooterPaths("./paths.json"))
     ]).then(() => {
-        setHeaderPaths("./paths.json");
         animateSignature();
         loadProjects("./projects.json");
     })

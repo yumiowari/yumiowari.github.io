@@ -1,3 +1,22 @@
+export async function setFooterPaths(path){
+    // define os caminhos específicos para cada nível de diretório
+    
+        try{
+            const response = await fetch(path);
+            const data = await response.json();
+    
+            // footer stylesheet
+            const stylesheet = document.querySelector('footer link'); 
+    
+            const matching_stylesheet = data.find(item => item.id === 'footer_stylesheet');
+    
+            stylesheet.setAttribute('href', matching_stylesheet.path);
+            //
+        }catch(error){
+            return console.error("Falha ao definir os caminhos do rodapé:", error);
+        }
+    }
+
 export function animateSignature(){
 // anima a assinatura "Yumiowari" no rodapé
 

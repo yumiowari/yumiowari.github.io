@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background: #feffd9;
+    color: #241326;
+    margin: 0;
+    height: 100vh; /* utiliza 100% da altura da janela */
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    padding-left: 10%; /* define o espaçamento à esquerda como 10% da largura da página */
+    padding-right: 1rem;
+    flex: 100%; /* empurra o footer e o header para as extremidades */
+}
+
+a {  /* links no corpo da página */
+    font-family: 'Times New Roman', Times, serif;
+    color: #1c4b8c;
+    text-decoration: none;
+    transition: all 250ms ease;
+}
+
+a:hover { /* links no corpo da página */
+    text-decoration: underline dotted;
+    font-weight: bold;
+    color: #2daab5;
+}

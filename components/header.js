@@ -1,17 +1,3 @@
-export async function loadComponentByTag(tag, path){
-// carrega os componentes predefinidos
-
-    try{
-        const response = await fetch(path);
-        const data = await response.text();
-        const element = document.querySelector(tag);
-
-        if(element)element.outerHTML = data;
-    }catch(error){
-        return console.error(`Falha ao carregar ${path}:`, error);
-    }
-}
-
 export async function setHeaderPaths(path){
 // define os caminhos específicos para cada nível de diretório
 
@@ -19,26 +5,30 @@ export async function setHeaderPaths(path){
         const response = await fetch(path);
         const data = await response.json();
 
+        // header stylesheet
+        const stylesheet = document.querySelector('header link'); 
+
+        const matching_stylesheet = data.find(item => item.id === 'header_stylesheet');
+
+        stylesheet.setAttribute('href', matching_stylesheet.path);
+        //
+
         // barra de navegação
-        const links = document.querySelectorAll("header nav ul li a");
+        const anchors = document.querySelectorAll('header nav ul li a');
     
-        links.forEach(link => {
-            const link_text = link.textContent.trim();
+        anchors.forEach(anchor => {
+            const matching_anchor = data.find(item => item.id === anchor.id);
 
-            const matching_link = data.find(item => item.text === link_text);
-
-            if(matching_link){
-                link.setAttribute('href', matching_link.path);
-            }
+            anchor.setAttribute('href', matching_anchor.path);
         })
         //
 
         // logotipo
-        const logo = document.querySelector("header a img")
+        const logo = document.querySelector("header a img#logo")
 
-        const match = data.find(item => item.text === "Logo");
+        const matching_logo = data.find(item => item.id === "logo");
 
-        logo.setAttribute('src', match.path);
+        logo.setAttribute('src', matching_logo.path);
         //
     }catch(error){
         return console.error("Falha ao definir os caminhos da barra de navegação:", error);
