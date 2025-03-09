@@ -24,13 +24,13 @@ export async function setHeaderPaths(path){
         //
 
         // logotipo
-        const logo = document.querySelector("header a img#logo")
+        const logo = document.querySelector('header a img#logo')
 
-        const matching_logo = data.find(item => item.id === "logo");
+        const matching_logo = data.find(item => item.id === 'logo');
 
         logo.setAttribute('src', matching_logo.path);
         //
     }catch(error){
-        return console.error("Falha ao definir os caminhos da barra de navegação:", error);
+        return console.error('Falha ao definir os caminhos da barra de navegação:', error);
     }
 }

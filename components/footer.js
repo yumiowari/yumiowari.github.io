@@ -13,18 +13,18 @@ export async function setFooterPaths(path){
             stylesheet.setAttribute('href', matching_stylesheet.path);
             //
         }catch(error){
-            return console.error("Falha ao definir os caminhos do rodapé:", error);
+            return console.error('Falha ao definir os caminhos do rodapé:', error);
         }
     }
 
 export function animateSignature(){
 // anima a assinatura "Yumiowari" no rodapé
 
-    const signature = document.getElementById("signature");
+    const signature = document.getElementById('signature');
     const original_text = signature.textContent;
     let interval;
 
-    signature.addEventListener("mouseover", () => {
+    signature.addEventListener('mouseover', () => {
         let current_text = original_text;
         let index = 0;
 
@@ -37,7 +37,7 @@ export function animateSignature(){
         }, 200); // tempo entre os frames (200ms)
     });
 
-    signature.addEventListener("mouseout", () => {
+    signature.addEventListener('mouseout', () => {
         clearInterval(interval);               // interrompe a animação e
         signature.textContent = original_text; // restaura o texto original
     });
