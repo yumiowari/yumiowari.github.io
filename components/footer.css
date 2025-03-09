@@ -28,10 +28,10 @@ footer ul li a:hover {
     transform: translateY(-3px) /* desloca o link 3 pixels para cima */
 }
 
-footer p span #signature {
+footer p span#signature {
     transition: all 250ms ease;
 }
 
-footer p span #signature:hover {
+footer p span#signature:hover {
     font-weight: bold;
 }

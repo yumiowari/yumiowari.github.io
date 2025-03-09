@@ -31,12 +31,12 @@ header nav ul li a:hover {
     transform: translateY(3px) /* desloca o link 3 pixels para baixo */
 }
 
-header a img#signature {
+header a img#logo {
     padding: 1rem;
 
     transition: all 250ms ease;
 }
 
-header a img#signature:hover {
+header a img#logo:hover {
     scale: 120%;
 }
