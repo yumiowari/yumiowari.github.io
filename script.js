@@ -4,9 +4,9 @@ import { animateSignature } from './components/footer.js';
 document.addEventListener("DOMContentLoaded", () => {
     Promise.all([
         loadComponentByTag("header", "./components/header.html"),
-        loadComponentByTag("footer", "./components/footer.html"),
-        setHeaderPaths("./paths.json")
+        loadComponentByTag("footer", "./components/footer.html")
     ]).then(() => {    
+        setHeaderPaths("./paths.json");
         animateSignature();
     })
 });
