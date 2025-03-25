@@ -10,21 +10,21 @@
         "title": "C Structures",
         "type": "working-on",
         "url": "https://github.com/yumiowari/c-structures",
-        "hot": true,
+        "hot": false,
         "description": "Algumas implementações de estruturas de dados em C."
     },
     {
         "title": "Shopkeeper",
-        "type": "to-do",
+        "type": "working-on",
         "url": "https://github.com/yumiowari/shopkeeper",
-        "hot": false,
+        "hot": true,
         "description": "Sistema para gestão de pequenos negócios em Python!"
     },
     {
         "title": "C Chat",
         "type": "working-on",
         "url": "https://github.com/yumiowari/c-chat",
-        "hot": true,
+        "hot": false,
         "description": "Sistema de chatting cliente-servidor em C."
     },
     {
