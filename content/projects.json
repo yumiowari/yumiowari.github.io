@@ -1,35 +1,35 @@
 [
     {
         "title": "How To GitHub On Linux",
-        "type": "released",
+        "status": "released",
         "url": "https://github.com/yumiowari/how-to-github-on-linux",
         "hot": false,
         "description": "Tutorial para configurar uma chave GPG para autenticação do GitHub e assinatura de commits pelo terminal do Linux!"
     },
     {
         "title": "C Structures",
-        "type": "working-on",
+        "status": "working-on",
         "url": "https://github.com/yumiowari/c-structures",
         "hot": false,
         "description": "Algumas implementações de estruturas de dados em C."
     },
     {
         "title": "Shopkeeper",
-        "type": "to-do",
+        "status": "to-do",
         "url": "https://github.com/yumiowari/shopkeeper",
         "hot": false,
         "description": "Sistema para gestão de pequenos negócios em Python!"
     },
     {
         "title": "C Chat",
-        "type": "working-on",
+        "status": "released",
         "url": "https://github.com/yumiowari/c-chat",
         "hot": true,
         "description": "Sistema de chatting cliente-servidor em C."
     },
     {
         "title": "yumiowari.github.io",
-        "type": "working-on",
+        "status": "working-on",
         "url": "https://github.com/yumiowari/yumiowari.github.io",
         "hot": false,
         "description": "Meu site HTML/CSS/JavaScript para portólio!"

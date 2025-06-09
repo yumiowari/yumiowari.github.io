@@ -16,7 +16,7 @@ async function loadProjects(path){
 
         for(const project of projects){
             const new_section = document.createElement('section');
-            new_section.id = project.type;
+            new_section.id = project.status;
             // released:   o projeto possui uma versão de lançamento e
             //             está sendo desenvolvido;
             // working-on: o projeto não possui uma versão de lançamento,
