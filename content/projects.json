@@ -15,9 +15,9 @@
     },
     {
         "title": "Shopkeeper",
-        "status": "to-do",
+        "status": "working-on",
         "url": "https://github.com/yumiowari/shopkeeper",
-        "hot": false,
+        "hot": true,
         "description": "Sistema para gestão de pequenos negócios em Python!"
     },
     {
