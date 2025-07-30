@@ -14,9 +14,9 @@
         "description": "Algumas implementações de estruturas de dados em C."
     },
     {
-        "title": "Shopkeeper",
-        "status": "working-on",
-        "url": "https://github.com/yumiowari/shopkeeper",
+        "title": "$hopkeeper",
+        "status": "released",
+        "url": "https://github.com/yumiowari/shopkeeper2",
         "hot": true,
         "description": "Sistema para gestão de pequenos negócios em Python!"
     },
