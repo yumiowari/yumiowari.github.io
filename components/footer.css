@@ -2,7 +2,8 @@ footer {
     background: #e6d0a1;
     padding: 1rem 0;
     text-align: center;
-    box-shadow: 0 -10px 10px #e6d0a1;  /* sombra do footer */
+    box-shadow: 0 0 10px 10px #e6d0a1;  /* sombra do footer */
+    z-index: 1;
 }
 
 footer p {

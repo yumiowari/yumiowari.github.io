@@ -3,6 +3,7 @@ header {
     color: #feffd9;
     padding: 1rem 0;
     text-align: center; /* centraliza o título */
+    z-index: 1;
 }
 
 header nav ul {

@@ -62,5 +62,5 @@ async function loadProjects(path){
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-
+    loadProjects('./projects.json');
 });
