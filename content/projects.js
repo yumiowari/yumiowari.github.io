@@ -1,7 +1,3 @@
-import { loadComponentByTag } from '../core.js';
-import { setHeaderPaths } from '../components/header.js';
-import { animateSignature, setFooterPaths } from '../components/footer.js';
-
 async function loadProjects(path){
 // carrega os projetos a partir do arquivo .json
 
@@ -66,13 +62,5 @@ async function loadProjects(path){
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    Promise.all([
-        loadComponentByTag('header', '../components/header.html')
-            .then(() => setHeaderPaths('./paths.json')),
-        loadComponentByTag('footer', '../components/footer.html')
-            .then(() => setFooterPaths('./paths.json'))
-    ]).then(() => {
-        animateSignature();
-        loadProjects('./projects.json');
-    })
+
 });
