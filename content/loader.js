@@ -4,9 +4,9 @@ import { animateSignature, setFooterPaths } from '../components/footer.js';
 
 window.addEventListener("load", () => {
     Promise.all([
-        loadComponentByTag('header', './components/header.html')
+        loadComponentByTag('header', '../components/header.html')
             .then(() => setHeaderPaths('./paths.json')),
-        loadComponentByTag('footer', './components/footer.html')
+        loadComponentByTag('footer', '../components/footer.html')
             .then(() => setFooterPaths('./paths.json')),
     ]).then(() => {    
         animateSignature();

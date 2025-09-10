@@ -22,8 +22,4 @@ export function hideLoadScreen(){
     loader.style.setProperty('--loader-color', randomColor);
     
     loader.classList.add("loader-hidden");
-
-    loader.addEventListener("transitionend", () => {
-        document.body.removeChild("loader");
-    })
 }
